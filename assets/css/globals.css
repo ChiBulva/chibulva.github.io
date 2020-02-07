@@ -346,7 +346,9 @@ button {
 .g-consalas {
     font-family: Consolas,monaco,monospace;
 }
-
+.g-century-gothic {
+    font-family: CenturyGothic, AppleGothic, sans-serif;
+}
 .g-centered-text {
     text-align: center;
 }
