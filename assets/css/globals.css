@@ -72,17 +72,21 @@ button {
     background-color: darkgray;
 }
 .g-lightorange {
-    background-color: lightsalmon;
+    background-color: #ffe6d7;
 }
 .g-lightyellow {
-    background-color: lightyellow;
+    background-color: #ffffdf;
 }
 .g-lightred {
-    background-color: lightcoral;
+    background-color: #ffdfd4;
 }
 .g-lightgreen {
     background-color: lightgreen;
 }
+.g-lightblue {
+    background-color: #e8d8ff;
+}
+
 .g-babyblue {
     background-color: rgb(46, 185, 229);
 }
