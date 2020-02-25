@@ -80,57 +80,57 @@
 			</div>
 		</div>
 
-	<!-- My Projects -->
+		<!-- My Projects -->
 		<!--
-	<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
-		<div class="g-height50 g-width100">
-			<div class="g-height100 g-width33- g-FL">
+		<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
+			<div class="g-height50 g-width100">
+				<div class="g-height100 g-width33- g-FL">
 
-			</div>
-			<div class="g-height100 g-width33- g-FL">
-				<img class="g-ImageFit g-pointer" src="./assets/images/Projects.png" alt="Logo_LinkdIn" onclick="Go_To('Projects')">
-			</div>
-			<div class="g-height100 g-width33- g-FL">
+				</div>
+				<div class="g-height100 g-width33- g-FL">
+					<img class="g-ImageFit g-pointer" src="./assets/images/Projects.png" alt="Logo_LinkdIn" onclick="Go_To('Projects')">
+				</div>
+				<div class="g-height100 g-width33- g-FL">
 
+				</div>
+			</div>
+			<div class="g-height50 g-width100">
+				<div class="g-height30 g-width100">
+
+				</div>
+				<div class="g-height70 g-width100 g-text-orange g-century-gothic">
+					<text class="g-pointer" onclick="Go_To('Projects')">
+						Projects
+					</text>
+				</div>
 			</div>
 		</div>
-		<div class="g-height50 g-width100">
-			<div class="g-height30 g-width100">
-
-			</div>
-			<div class="g-height70 g-width100 g-text-orange g-century-gothic">
-				<text class="g-pointer" onclick="Go_To('Projects')">
-					Projects
-				</text>
-			</div>
-		</div>
-	</div>
-	-->
+		-->
 		<!-- About me -->
 		<!--
-	<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
-		<div class="g-height50 g-width100">
-			<div class="g-height100 g-width33- g-FL">
+		<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
+			<div class="g-height50 g-width100">
+				<div class="g-height100 g-width33- g-FL">
 
-			</div>
-			<div class="g-height100 g-width33- g-FL">
-				<img class="g-ImageFit g-pointer" src="./assets/images/About_Me.png" alt="Logo_LinkdIn" onclick="Go_To('About_Me')">
-			</div>
-			<div class="g-height100 g-width33- g-FL">
+				</div>
+				<div class="g-height100 g-width33- g-FL">
+					<img class="g-ImageFit g-pointer" src="./assets/images/About_Me.png" alt="Logo_LinkdIn" onclick="Go_To('About_Me')">
+				</div>
+				<div class="g-height100 g-width33- g-FL">
 
+				</div>
 			</div>
-		</div>
-		<div class="g-height50 g-width100">
-			<div class="g-height30 g-width100">
+			<div class="g-height50 g-width100">
+				<div class="g-height30 g-width100">
 
+				</div>
+				<div class="g-height70 g-width100 g-text-green g-century-gothic">
+					<text class="g-pointer" onclick="Go_To('About_Me')">
+						About Me
+					</text>
+				</div>
 			</div>
-			<div class="g-height70 g-width100 g-text-green g-century-gothic">
-				<text class="g-pointer" onclick="Go_To('About_Me')">
-					About Me
-				</text>
-			</div>
-		</div>
-	</div> -->
+		</div> -->
 		<!-- Uncomment when middle sections are filled <div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3"> -->
 		<div class="g-height100 g-width50 g-FL g-centered-text g-responsive-text-3">
 
@@ -157,33 +157,47 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		document.getElementsByClassName("clickable").addEventListener("click", Item_Clicked);
 
-        function Item_Clicked() {
-			alert("Clicked: " + test);
+	<script>
+
+		// Triggers every 3.5 seconds
+
+        function Toggle_Light() {
+            var Logo_src = document.getElementById("Logo").src
+
+			if (Logo_src.includes("/assets/images/Bulb.svg")) {
+				document.getElementById("Logo").src = "./assets/images/Bulb_filled.png";
+			}
+			else if (Logo_src.includes("/assets/images/Bulb_filled.png")) {
+				document.getElementById("Logo").src = "./assets/images/Bulb.svg";
+			}
+
+			setTimeout(Toggle_Light, 2500);
         }
 
-		function Go_To(URL) {
+		// Initial wait period for Light Toggle
+		setTimeout(Toggle_Light, 2500); // Should be 3.5 seconds
+
+        function Go_To(URL) {
 			if (URL == 'resume') {
-                //alert("Add this later");
-                window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
-            } else if (URL == 'Social') {
-                //alert("Add this later");
-                window.location.pathname = '/assets/scene/Social_Media.html';
-            }
-            else if (URL == 'Logo') {
-                //alert("Add this later");
-                var Logo_src = document.getElementById("Logo").src
-		
-                //alert(Logo_src);
-                if (Logo_src.includes("/assets/images/Bulb.svg")) {
-                    document.getElementById("Logo").src = "./assets/images/Bulb_filled.png";
-                }
+				//alert("Add this later");
+				window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
+			} else if (URL == 'Social') {
+				//alert("Add this later");
+				window.location.pathname = '/assets/scene/Social_Media.html';
+			}
+			else if (URL == 'Logo') {
+				//alert("Add this later");
+				var Logo_src = document.getElementById("Logo").src
+
+				//alert(Logo_src);
+				if (Logo_src.includes("/assets/images/Bulb.svg")) {
+					document.getElementById("Logo").src = "./assets/images/Bulb_filled.png";
+				}
 				else if (Logo_src.includes("/assets/images/Bulb_filled.png")) {
-                    document.getElementById("Logo").src = "./assets/images/Bulb.svg";
-                }
-            }
+					document.getElementById("Logo").src = "./assets/images/Bulb.svg";
+				}
+			}
 		}
 
 	</script>

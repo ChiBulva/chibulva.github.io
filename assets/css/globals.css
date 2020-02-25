@@ -18,6 +18,14 @@ button {
         font-family: Consolas,monaco,monospace;
 }
 
+.g-Floater {
+    position: absolute;
+}
+
+.g-Z-9999 {
+    z-index: 9999;
+}
+
 /* Colors for deving */
 .g-green {
     background-color: green;
@@ -355,6 +363,11 @@ button {
 }
 .g-centered-text {
     text-align: center;
+}
+
+.g-centered {
+    text-align: center;
+    padding: 20vh;
 }
 
 .g-text-red {
