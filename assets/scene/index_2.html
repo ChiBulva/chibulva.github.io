@@ -48,7 +48,7 @@
 		<div class="g-height50 g-width100 g-centered-text g-responsive-text-5">
 			Travis C. J. Gray
 		</div>
-		<div class="g-height50 g-width100 g-centered-text g-responsive-text-3" onclick="Go_To('Dev')">
+		<div class="g-height50 g-width100 g-centered-text g-responsive-text-3">
 			Developer
 		</div>
 	</div>
@@ -139,7 +139,8 @@
             } else if (URL == 'resume') {
                 //alert("Add this later");
                 window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
-            } else if (URL == 'Logo') {
+            }
+            else if (URL == 'Logo') {
                 //alert("Add this later");
                 var Logo_src = document.getElementById("Logo").src
 		
@@ -150,9 +151,6 @@
 				else if (Logo_src.includes("/assets/images/Bulb_filled.png")) {
                     document.getElementById("Logo").src = "./assets/images/Bulb.svg";
                 }
-            } else if (URL == 'Dev') {
-                //alert("Add this later");
-                window.location.pathname = '/assets/scene/index_2.html';
             }
 		}
 
