@@ -72,7 +72,7 @@
 				<div class="g-height30 g-width100">
 
 				</div>
-				<div class="g-height70 g-width100 g-text-red g-century-gothic">
+				<div class="g-height70 g-width100 g-century-gothic">
 					<text class="g-pointer" onclick="Go_To('Social')">
 						Social Media
 					</text>
@@ -149,9 +149,9 @@
 				<div class="g-height30 g-width100">
 
 				</div>
-				<div class="g-height70 g-width100 g-text-blue g-century-gothic">
+				<div class="g-height70 g-width100 g-century-gothic">
 					<text class="g-pointer" onclick="Go_To('resume')">
-						Resume
+						Resume's
 					</text>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 				document.getElementById("Logo").src = "./assets/images/Bulb.svg";
 			}
 
-			setTimeout(Toggle_Light, 2500);
+			setTimeout(Toggle_Light, 2000);
         }
 
 		// Initial wait period for Light Toggle
@@ -181,11 +181,13 @@
         function Go_To(URL) {
 			if (URL == 'resume') {
 				//alert("Add this later");
-				window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
+				//window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
+				window.location.pathname = '/assets/scene/Resme_Selection.html';
 			} else if (URL == 'Social') {
 				//alert("Add this later");
 				window.location.pathname = '/assets/scene/Social_Media.html';
 			}
+			/* 
 			else if (URL == 'Logo') {
 				//alert("Add this later");
 				var Logo_src = document.getElementById("Logo").src
@@ -198,6 +200,7 @@
 					document.getElementById("Logo").src = "./assets/images/Bulb.svg";
 				}
 			}
+			*/
 		}
 
 	</script>
