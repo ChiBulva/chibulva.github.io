@@ -1,0 +1,144 @@
+<!--
+    Wait.... You're actually looking at my code........ Thank you!!!!
+
+    Hopefully everything is easy to find. My goal was to have this site completely hosted on github for free.
+    My custom made css templete follows my own website design methods. These methods are based on percentages.
+    To do this I emplemented a series of clickable items that would lead to each scene. This is controlled by conditionals in the <script> tag
+
+    If you would like to colaberate...
+
+    Email me at:
+
+        travis.c.j.gray@gmail.com
+
+    with subject 'CONCATINATE'
+-->
+
+<html class="g-FlexFit">
+<head>
+    <title>
+        Travis Gray WebPage: Resume Section
+    </title>
+    <link rel="stylesheet" type="text/css" href="../css/globals.css">
+
+    <!-- Local css -->
+
+    <style>
+        .bg {
+            /* The image used */
+            background-image: url("../images/background.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body class="g-FlexFit g-white g-century-gothic bg">
+    <!-- <div id="wrap" class="g-red g-height65 g-width100"></div> -->
+
+    <div class="g-height60 g-width100 g-black" alt="Profile Picture">
+        <img id="Profile_Picture" class="g-ImageFit" src="../images/Profile/Profile.jpg" alt="Logo" onclick="Go_To('Logo')">
+    </div>
+
+    <div class="g-height40 g-width100 g-responsive-text-5">
+        <div class="g-height100 g-width10 g-responsive-text-5 g-FL">
+
+        </div>
+        <div class="g-height100 g-width80 g-responsive-text-5 g-FL">
+            <div class="g-height10 g-width100">
+
+            </div>
+            <div class="g-height80 g-width100 g-24-Font g-overflow-auto">
+
+                Hello,
+                <br />
+                <br />
+                My name it Travis. I am a creative individual looking for like minds.
+                <br />
+                <br />
+                I have developed projects that give me experience with C/C++, Python 2/3, Flask, HTML, CSS, JavaScript, Node.js, Express, SQL, MySQL, and BASH, GitHub, Git , Haskell, Prolog, AWK, Ruby, MAS M (Assembly), Language Fundamentals, Rust, and Mongo DB.
+                <br />
+                <br />
+                I have valuable experience from my position at the College of Forestry at Oregon State University in the IT department. I worked closely with ranking members such as the dean, professors, and graduate students to assist with their technology needs. At the College of Forestry I completed projects which most notably include updating the College of Forestry’s reservation system ( Web ), and an Account Billing tool for Printing services ( Python / string parsing ). I also designed a computer science curriculum for children and teens ages 7-15 under the request of the Oregon Museum of Science and Technology (OMSI) for my senior project.
+                <br />
+                <br />
+                GO2 INC.’s Founder & Chief Technology Officer.
+                7 Peaks distribution Software Developer and Technical Advisor.
+                <br />
+                <br />
+                -Travis
+
+            </div>
+            <div class="g-height10 g-width100">
+
+            </div>
+        </div>
+        <div class="g-height100 g-width10 g-responsive-text-5 g-FL">
+
+        </div>
+    </div>
+    <!--
+    <div class="g-height10 g-width100 g-FL g-red g-centered-text">
+
+            <div class="g-height50 g-width100">
+                <div class="g-height100 g-width33- g-FL">
+
+                </div>
+                <div class="g-height100 g-width33- g-FL">
+                    <img class="g-ImageFit g-pointer" src="../images/Profile_Clicker.png" alt="Logo_LinkdIn" onclick="Go_To('Profile')">
+                </div>
+                <div class="g-height100 g-width33- g-FL">
+
+                </div>
+            </div>
+            <div class="g-height50 g-width100">
+                <div class="g-height30 g-width100">
+
+                </div>
+                <div class="g-height70 g-width100 g-text-black g-century-gothic">
+                    <text class="g-pointer" onclick="Go_To('Profile')">
+                        Contact
+                    </text>
+                </div>
+            </div>
+    </div>
+    -->
+
+    <script>
+
+        function Go_To(URL) {
+            if (URL == 'resume') {
+                //alert("Add this later");
+                //window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
+                window.location.pathname = '/assets/scene/Resume_Selection.html';
+            } else if (URL == 'Social') {
+                //alert("Add this later");
+                window.location.pathname = '/assets/scene/Social_Media.html';
+            } else if (URL == 'Projects') {
+                //alert("Add this later");
+                window.location.pathname = '/assets/scene/Projects.html';
+            }
+            /*
+            else if (URL == 'Logo') {
+                //alert("Add this later");
+                var Logo_src = document.getElementById("Logo").src
+
+                //alert(Logo_src);
+                if (Logo_src.includes("/assets/images/Bulb.svg")) {
+                    document.getElementById("Logo").src = "./assets/images/Bulb_filled.png";
+                }
+                else if (Logo_src.includes("/assets/images/Bulb_filled.png")) {
+                    document.getElementById("Logo").src = "./assets/images/Bulb.svg";
+                }
+            }
+            */
+        }
+
+    </script>
+
+</body>
+</html>
