@@ -56,7 +56,7 @@
 
 		<!-- Social Media -->
 		<!-- Uncomment when middle sections are filled <div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3"> -->
-		<div class="g-height100 g-width50 g-FL g-centered-text g-responsive-text-3">
+		<div class="g-height100 g-width33- g-FL g-centered-text g-responsive-text-3">
 			<div class="g-height35 g-width100">
 				<div class="g-height100 g-width33- g-FL">
 
@@ -82,7 +82,7 @@
 
 		<!-- My Projects -->
 		<!--
-		<div class="g-height100 g-width33- g-FL g-centered-text g-responsive-text-3">
+		<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
 			<div class="g-height50 g-width100">
 				<div class="g-height100 g-width33- g-FL">
 
@@ -107,14 +107,13 @@
 		</div>
 		-->
 		<!-- About me -->
-		<!--
-		<div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3">
+		<div class="g-height100 g-width33- g-FL g-centered-text g-responsive-text-3">
 			<div class="g-height50 g-width100">
 				<div class="g-height100 g-width33- g-FL">
 
 				</div>
 				<div class="g-height100 g-width33- g-FL">
-					<img class="g-ImageFit g-pointer" src="./assets/images/About_Me.png" alt="Logo_LinkdIn" onclick="Go_To('About_Me')">
+					<img class="g-ImageFit g-pointer" src="./assets/images/Profile_Clicker.png" alt="Logo_LinkdIn" onclick="Go_To('Profile')">
 				</div>
 				<div class="g-height100 g-width33- g-FL">
 
@@ -124,18 +123,18 @@
 				<div class="g-height30 g-width100">
 
 				</div>
-				<div class="g-height70 g-width100 g-text-green g-century-gothic">
-					<text class="g-pointer" onclick="Go_To('About_Me')">
+				<div class="g-height70 g-width100 g-text-black g-century-gothic">
+					<text class="g-pointer" onclick="Go_To('Profile')">
 						About Me
 					</text>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<!-- Uncomment when middle sections are filled <div class="g-height100 g-width25 g-FL g-centered-text g-responsive-text-3"> -->
 		
 		<!-- Resume -->
 		
-		<div class="g-height100 g-width50 g-FL g-centered-text g-responsive-text-3">
+		<div class="g-height100 g-width33- g-FL g-centered-text g-responsive-text-3">
 
 			<div class="g-height35 g-width100">
 				<div class="g-height100 g-width33- g-FL">
@@ -153,7 +152,7 @@
 
 				</div>
 				<div class="g-height70 g-width100 g-century-gothic">
-					<text class="g-pointer" onclick="Go_To('resume')">
+					<text class="g-pointer" onclick="Go_To('Resume')">
 						Resume's
 					</text>
 				</div>
@@ -182,7 +181,7 @@
 		setTimeout(Toggle_Light, 2500); // Should be 3.5 seconds
 
         function Go_To(URL) {
-			if (URL == 'resume') {
+			if (URL == 'Resume') {
 				//alert("Add this later");
 				//window.open("./assets/resume/TravisCJGrayResume2020_Software.pdf");
 				window.location.pathname = '/assets/scene/Resume_Selection.html';
@@ -192,6 +191,9 @@
 			} else if (URL == 'Projects') {
 				//alert("Add this later");
 				window.location.pathname = '/assets/scene/Projects.html';
+			} else if (URL == 'Profile') {
+				//alert("Add this later");
+				window.location.pathname = '/assets/scene/Profile.html';
 			}
 			/* 
 			else if (URL == 'Logo') {
