@@ -511,6 +511,14 @@ button {
     float: right;
 }
 
+.g-responsive-text-1 {
+    font-size: 1vh; /* 1% video height */
+}
+
+.g-responsive-text-2 {
+    font-size: 2vh; /* 2% video height */
+}
+
 .g-responsive-text-3 {
     font-size: 3vh; /* 3% video height */
 }
